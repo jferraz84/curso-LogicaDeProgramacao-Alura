@@ -1,6 +1,7 @@
 <meta charset="UTF-8">
 
 <h1>Resultado da Prova</h1>
+<h3>Exercicio 1 !! "Calcula acerto de Provas"</h3>
 
 <script>
     document.write("Resultado da prova de Heloyse Eduarda <br>");
@@ -8,8 +9,38 @@
     document.write("Totalizando " + 15/50 * 100 + " %  de acretos da Prova <br>" );
 
     document.write("---------------------------------------<br>");
-    document.write("Aline nasceu em " + (2020 - 33) + "<br>");
-    document.write("Heloyse nasceu em " + (2020 - 8)+ "<br>");
-    document.write("Heloa nasceu em " + (2020 - 4) );
+    var ano = 2020;
+    document.write("Aline nasceu em " + (ano - 33) + "<br>");
+    document.write("Heloyse nasceu em " + (ano - 8)+ "<br>");
+    document.write("Heloa nasceu em " + (ano - 4) +"<br>" );
+
+    document.write("---------------------------------------<br>");
+    document.write("Aline tem " + (ano - 1987) + " anos<br>");
+    document.write("Heloyse tem " + (ano - 2012)+ " anos<br>");
+    document.write("Heloa tem " + (ano - 2016) +" anos<br>" );
     
+    var idadeAline = (ano - 1987);
+    var idadeHelo = (ano - 2012);
+    var idadeHeloa = (ano - 2016);
+    var media = (idadeAline + idadeHelo + idadeHeloa)/ 3;
+    document.write("A média das idades delas é: " + Math.round(media)); // arredondando valores
+
+</script>
+
+<h1>Álcool ou Gasolina?</h1>
+<h3>Exercicio 2 !! "Calcula consumo "</h3>
+
+<script>
+
+    var tanque = 40;
+    var caminhoComGasolina = 480;
+    var caminhoComAlcool = 300;
+
+    var resltGasol = caminhoComGasolina / tanque;
+    var resultAlcool = caminhoComAlcool / tanque;
+
+    document.write("O consumo medio por litro de <strong>Gasolina</strong> é de " 
+                                + resltGasol + " Km por litro<br>");
+    document.write("O consumo medio por litro de <strong>Alcool</strong> é de " 
+                                + resultAlcool + " Km por litro<br>");
 </script>
