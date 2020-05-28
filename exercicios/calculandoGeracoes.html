@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<h1>Calculando gerações desde o ano 1500</h1>
+<h3>Exercicio 3 !! Calcular o numero de geraçoes desde 1500 na media de 28 anos</h3>
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var idadeMediaQuandoTemFilhos = 28;
+    var anoAtual = 2020;
+    var qtdGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+
+    mostra("Desde 1500 até o ano atual, tivemos uma média de " +  Math.round(qtdGeracoes) + " gerações")
+
+</script>

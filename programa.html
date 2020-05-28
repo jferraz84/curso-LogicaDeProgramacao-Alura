@@ -2,11 +2,23 @@
 
 <script>
 
-    document.write("Minha idade é: ");
-    document.write(2020 - 1984 + " anos" +"<br>");
+    function pulaLinha() {
+        document.write("<br>");
+    }
 
-    document.write("A média da idade dos estudantes é: ");
-    document.write((25 + 35 + 18)/ 3 +" anos");
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    mostra("Meu nome é Jorge Ferraz")
+
+    //document.write("Minha idade é: ");
+    mostra("Minha idade é: " + (2020 - 1984) + " anos");
+
+    //document.write("A média da idade dos estudantes é: ");
+    mostra("A média da idade dos estudantes é: " + (25 + 35 + 18) / 3 + " anos");
     
+
 
 </script>
