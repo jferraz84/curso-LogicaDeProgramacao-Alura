@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numDeFamiliares = parseInt(prompt("Quantas pessoas tem na sua familia?"));
+    var cont = 1;
+    var totalIdades = 0;
+
+    while(cont <= numDeFamiliares){
+        var idade = parseInt(prompt("Informe idade do " +cont +"° familiar: "));
+        totalIdades = totalIdades + idade;
+        cont++;
+    }
+
+    var mediaIdades = totalIdades / numDeFamiliares;
+    mostra("A media de idade de todos familiares é " + mediaIdades);
+
+    mostra("FIM");
+  
+
+
+
+
+
+</script>
