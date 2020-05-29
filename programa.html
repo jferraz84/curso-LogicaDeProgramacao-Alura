@@ -14,7 +14,7 @@
     function calculaImc(peso, altura) {
 
         return peso / (altura * altura);
-        
+
         /*Magreza	< 18.5	< 47.4 Kg
         Normal	18.5 a 24.9	47.4 a 63.7 Kg
         Sobrepeso	24.9 a 30	63.7 a 76.8 Kg
@@ -48,7 +48,17 @@
     var imc = calculaImc(pesoInformado, alturaInformado);
 
     mostra(nome + ", o Resultado do seu IMC de é " + Math.round(imc));
-    
+
+    if (imc < 18.5) {
+        mostra("Voce esta com peso abaixo do recomendado");
+    } else if (imc >= 18.5 && imc <= 35) {
+        mostra("Voce esta dentro dos padrões de IMC");
+    } else if (imc > 35) {
+        mostra("Voce esta com peso acima do indicado")
+    }
+
+
+
 
 
 
