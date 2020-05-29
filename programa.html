@@ -6,19 +6,51 @@
         document.write("<br>");
     }
 
-    function mostra(frase){
+    function mostra(frase) {
         document.write(frase);
         pulaLinha();
     }
 
-    mostra("Meu nome é Jorge Ferraz")
+    function calculaImc(peso, altura) {
 
+        return peso / (altura * altura);
+        
+        /*Magreza	< 18.5	< 47.4 Kg
+        Normal	18.5 a 24.9	47.4 a 63.7 Kg
+        Sobrepeso	24.9 a 30	63.7 a 76.8 Kg
+        Obesidade	> 30	> 76.8 Kg*/
+    }
+
+    mostra("Meu nome é Jorge Ferraz")
     //document.write("Minha idade é: ");
     mostra("Minha idade é: " + (2020 - 1984) + " anos");
-
     //document.write("A média da idade dos estudantes é: ");
     mostra("A média da idade dos estudantes é: " + (25 + 35 + 18) / 3 + " anos");
+    mostra("------------------------------------------------------------------")
+
+
+    /*var pesoJorge = 86;
+    var alturaJorge = 1.75;
+
+    var pesoAline = 66;
+    var alturaAline = 1.60;
+
+    var imcCalculado1 = calculaImc(pesoJorge, alturaJorge);
+    var imcCalculado2 = calculaImc(pesoAline, alturaAline);
+
+    mostra("O Resultado do IMC de Jorge é: " + Math.round(imcCalculado1));
+    mostra("O Resultado do IMC de Aline é: " + Math.round(imcCalculado2));*/
+
+    var nome = prompt("Informe seu nome")
+    var pesoInformado = prompt(nome + ", informe o seu peso: ");
+    var alturaInformado = prompt(nome + ", informe a sua altura: ");
+
+    var imc = calculaImc(pesoInformado, alturaInformado);
+
+    mostra(nome + ", o Resultado do seu IMC de é " + Math.round(imc));
     
+
+
 
 
 </script>
